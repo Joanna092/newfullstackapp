@@ -13,4 +13,5 @@ Rails.application.routes.draw do
     delete 'tasks/:id'                => 'tasks#destroy'
   end
 
+  root 'static_pages#index'
 end
