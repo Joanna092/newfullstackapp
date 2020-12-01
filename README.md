@@ -1,6 +1,7 @@
 App deployed to Heroku:
 https://xxfullstacktodo.herokuapp.com/
 
+Fullstack To Do List made with Ruby on Rails. 
 
 
 # To Do List Full-stack
