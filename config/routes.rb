@@ -1,5 +1,6 @@
-Rails.application.routes.draw do
+# frozen_string_literal: true
 
+Rails.application.routes.draw do
   namespace :api do
     # Add routes below this line
     resources :users, only: [:create]
@@ -15,5 +16,5 @@ Rails.application.routes.draw do
 
   root 'static_pages#index'
   # Redirect all other paths to index page
-   get '*path'    => 'static_pages#index'
+  get '*path' => 'static_pages#index'
 end
