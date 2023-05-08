@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ToDoListFullStack</title>
+    <%= csrf_meta_tags %>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+
+    <link href="/vendor/assets/stylesheets/fontawesome/css/all.min.css rel="stylesheet">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class="<%= controller_name %> <%= action_name %>">
+    <%= yield %>
+  </body>
+</html>
