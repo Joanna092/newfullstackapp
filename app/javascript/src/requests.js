@@ -39,6 +39,30 @@ export var indexTasks = function (successCB, errorCB) {
 };
 */}
 
+
+var postTask = function (content) {
+  var request = {
+    type: 'POST',
+    url: 'api/tasks?api_key=1',
+    data: {
+      task: {
+        content: content
+      }
+    },
+    success: function (response) {
+      console.log(response);
+    },
+    error: function (request, errorMsg) {
+      console.log(request, errorMsg);
+    }
+  }
+
+  $.ajax(request);
+};
+
+postTask('this is some task...');
+
+{/* 
 export var postTask = function (content, successCB, errorCB) {
   var request = {
     type: 'POST',
@@ -54,3 +78,4 @@ export var postTask = function (content, successCB, errorCB) {
 
   $.ajax(request);
 };
+*/}
