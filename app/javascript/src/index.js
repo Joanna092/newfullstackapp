@@ -1,3 +1,4 @@
+import "src/index";
 import "./requests.js";
 
 import $ from 'jquery';
