@@ -60,7 +60,6 @@ var postTask = function (content) {
   $.ajax(request);
 };
 
-postTask('this is some task...');
 
 {/* 
 export var postTask = function (content, successCB, errorCB) {
