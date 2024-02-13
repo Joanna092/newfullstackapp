@@ -1,5 +1,3 @@
-console.log('ajax requests from javascript/src with packs');
-
 import $ from 'jquery';
 
 $.ajaxSetup({
@@ -8,8 +6,7 @@ $.ajaxSetup({
   }
 });
 
-
-var indexTasks = function () {
+export var indexTasks = function () {
   var request = {
     type: 'GET',
     url: 'api/tasks?api_key=1',
@@ -24,23 +21,7 @@ var indexTasks = function () {
   $.ajax(request);
 };
 
-indexTasks();
-
-{/* 
-export var indexTasks = function (successCB, errorCB) {
-  var request = {
-    type: 'GET',
-    url: 'api/tasks?api_key=1',
-    success: successCB,
-    error: errorCB
-  }
-
-  $.ajax(request);
-};
-*/}
-
-
-var postTask = function (content) {
+export var postTask = function (content) {
   var request = {
     type: 'POST',
     url: 'api/tasks?api_key=1',
@@ -59,22 +40,3 @@ var postTask = function (content) {
 
   $.ajax(request);
 };
-
-
-{/* 
-export var postTask = function (content, successCB, errorCB) {
-  var request = {
-    type: 'POST',
-    url: 'api/tasks?api_key=1',
-    data: {
-      task: {
-        content: content
-      }
-    },
-    success: successCB,
-    error: errorCB
-  }
-
-  $.ajax(request);
-};
-*/}
