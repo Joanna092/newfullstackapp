@@ -20,7 +20,7 @@ export var indexTasks = function (successCB, errorCB) {
 
  
 {/* 
- export var getAndDisplayAllTasks = function() {
+ getAndDisplayAllTasks = function() {
   $.ajax({
       type: 'GET',
       url: 'api/tasks?api_key=1',
