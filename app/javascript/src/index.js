@@ -1,6 +1,7 @@
-import "src/index";
-import "./requests.js";
+//import "src/index";
+//import "./requests.js";
 
+/*
 import $ from 'jquery';
 
 import {
@@ -17,5 +18,5 @@ indexTasks(function (response) {
   $("#tasks").html(htmlString);
 });
 
-
+*/
  

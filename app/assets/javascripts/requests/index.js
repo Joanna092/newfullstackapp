@@ -1,2 +1,2 @@
 //= require_tree .
-import "src/index";
+//import "src/index";
