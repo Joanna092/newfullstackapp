@@ -1,7 +1,7 @@
 App deployed to Heroku:
 https://fullstack-todolist-app-6aecddb2d7cb.herokuapp.com/
 
-Note: currently the app is not deployed to Heroku 
+Note: Currently the app works locally but the Heroku deploy is not working. I am working on fixing this issue.
 
 Fullstack To Do List made with Ruby on Rails. 
 
